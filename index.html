@@ -1,56 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-  <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-  <title>Hello World!</title>
-
-  <!-- The website stylesheet -->
-  <link rel="stylesheet" href="/style.css" />
-
-  <!-- The website JavaScript file -->
-  <script src="/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Rahitya Venkata Sai - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+        }
+        .personal-info p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 5px 0;
+            color: #000000;
+        }
+        .personal-info strong {
+            display: inline-block;
+            width: 80px; 
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #cccccc;
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 22px;
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 18px;
+            color: #000000;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        .qualification-item, .project-item {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 0;
+        }
+        li, p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .qualification-item p, .qualification-item i {
+            margin: 2px 0 2px 15px;
+            font-style: normal;
+        }
+        .qualification-item i {
+           color: #555555; 
+        }
+    </style>
 </head>
-
 <body>
-  <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-  <div class="wrapper">
-    <div class="content" role="main">
-      <h1 class="title">Oh hi website!</h1>
-      <img src="/cool-website.svg" class="illustration" alt="cool website" />
-      <div class="instructions">
-        <p>
-          Fork <a href="https://github.com/glitchdotcom/website-to-compute">this project</a> and open it in a GitHub Codespace.
-        </p>
-        <p> Follow the steps in the README to deploy your new website to Fastly in a few steps!
-        </p>
 
-      </div>
-
-      <footer class="footer">
-        <div>
-          <a class="remix" href="https://github.com/glitchdotcom/website-to-compute">🚧 Get your own site</a>
+    <div class="container">
+        
+        <div class="personal-info">
+            <p><strong>Name:</strong> J. Rahitya Venkata Sai</p>
+            <p><strong>Address:</strong> Amalapuram, Andhra Pradesh</p>
+            <p><strong>Phone:</strong> 9705030746</p>
         </div>
-      </footer>
-    </div>
-  </div>
-</body>
+        
+        <hr>
 
+        <section id="qualifications">
+            <h2>Qualification</h2>
+            <div class="qualification-item">
+                <h3>Engineering (Pursuing)</h3>
+                <p>Pursuing Bachelor's Degree in Engineering</p>
+            </div>
+            <div class="qualification-item">
+                <h3>Intermediate (IPE Board)</h3>
+                <p>Completed in Andhra Pradesh</p>
+                <i>Percentage: 93%</i>
+            </div>
+            <div class="qualification-item">
+                <h3>SSC (Class 10)</h3>
+                <p>Completed in Andhra Pradesh</p>
+                <i>Passed out: 2022</i><br>
+                <i>Percentage: 95%</i>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C, Java, Python</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="interests">
+            <h2>Areas of Interest</h2>
+            <p>Building web applications using Artificial Intelligence for innovative energy production and power sustainability.</p>
+        </section>
+        
+        <hr>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Live Monitoring System of Power Sharing Connections</h3>
+                <p>Conceptualized a system for real-time tracking and management of shared power resources to enhance efficiency and prevent overloading.</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
 </html>
